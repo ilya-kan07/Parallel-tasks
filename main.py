@@ -37,7 +37,9 @@ def main(p, filename):
         print(f"Error: File {filename} not found.")
         return
 
-    print(f"Loaded tasks: {tasks}")
+    print("Loaded tasks:")
+    for el in tasks:
+        print(el)
 
     parent_connections = []
     processes = []
